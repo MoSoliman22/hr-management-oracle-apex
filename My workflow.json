@@ -1,0 +1,72 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "new-employee",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "5787b4b2-3f1b-4b08-9e68-269aab2920fa",
+      "name": "Webhook",
+      "webhookId": "de01c2ec-98a7-42aa-b003-d8c0a588dc78"
+    },
+    {
+      "parameters": {
+        "sendTo": "MOHAMEDSOLIMANAHMED97@GMAIL.COM",
+        "subject": "=New team member: {{ $json.body.employee_name }}",
+        "message": "=  Hi {{ $json.body.manager_name }},\n\n  A new employee has joined your team:\n\n  Name: {{ $json.body.employee_name }}\n  Job Title: {{ $json.body.job_title }}\n  Email: {{ $json.body.employee_email }}\n\n  Welcome them aboard!",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "d9f59449-cbd9-4c34-a0d2-7cf877b08a04",
+      "name": "Send a message",
+      "webhookId": "257b1430-f0be-40e2-86e6-b7176fc41e5e",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "l0PfydQBMuiGydXf",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "56ef5eba-27a0-40c1-98a0-7129d4a0ada2",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d2dbd3f8afe89d327105702c8b64050f3f8312221ac3b413ea2df3df97b0929d"
+  },
+  "nodeGroups": [],
+  "id": "3bQ2e6p2lZDZbQ6O",
+  "tags": []
+}
