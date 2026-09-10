@@ -2,7 +2,7 @@
 
 A full-stack HR administration application built in **Oracle APEX 24+**, using the classic Oracle **HR sample schema** (OEHR-prefixed tables). Built as a portfolio project to demonstrate low-code application development, PL/SQL, data modeling, and workflow automation.
 
-🎥 **[Watch the demo video](#)** &nbsp;|&nbsp; 💼 **[Connect on LinkedIn](#)**
+🎥 **[Watch the demo video](https://www.loom.com/share/0a5360bf2151436bb3d6b3f2aeb385cf)** &nbsp;|&nbsp; 💼 **[Connect on LinkedIn](https://www.linkedin.com/in/soliman97/)**
 
 ---
 
@@ -114,4 +114,4 @@ This app goes beyond a basic CRUD demo — it's a complete HR management workflo
 ## Author
 
 Built by **Soliman** as a portfolio project.
-Feel free to reach out with feedback or questions.
+Connect on [LinkedIn](https://www.linkedin.com/in/soliman97/) — feel free to reach out with feedback or questions.
